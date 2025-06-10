@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'digital';
+  src: url(/assets/Digital.TTF);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+$body-bg: #f7f7f7;
+$calculator-bg: #ffffff;
+$display-text: #222222;
+$number-buttons: #e6e6e6;
+$operator-Buttons: #3b82f6;
+$special-Buttons: #ef4444;
+$half-Button: #6366f1;
+$equal-Button: #facc15;
+$divide-Button: #10b981;
+
+
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .calculator {
+    width: 21rem;
+    background-color: $calculator-bg;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+}
+
+.calculator .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+form .display{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+form .display input{
+    width: 100%;
+    font-family: 'digital',sans-serif;
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    color: $display-text;
+    outline: 0;
+}
+
+form .buttons input:last-child{
+    grid-column: 3 / span 2;
+}
+
+
+
+.buttons input {
+  background-color: $number-buttons;
+  border: 0;
+  font-family: 'digital',sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
