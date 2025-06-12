@@ -1,6 +1,6 @@
 @font-face {
   font-family: "digital";
-  src: url(/assets/Digital.TTF);
+  src: url("./assets/Digital.TTF");
 }
 * {
   margin: 0;
