@@ -1,8 +1,7 @@
 @font-face {
-  font-family: 'digital';
+  font-family: "digital";
   src: url("./assets/Digital.TTF");
 }
-
 
 * {
   margin: 0;
@@ -21,21 +20,22 @@ $half-Button: #6366f1;
 $equal-Button: #facc15;
 $divide-Button: #10b981;
 
-
-
 .container {
   width: 100%;
   min-height: 100vh;
-  background-color: var($body-bg);
+  background: $body-bg;
   display: flex;
   align-items: center;
   justify-content: center;
 
   .calculator {
     width: 21rem;
-    background-color: $calculator-bg;
+    background: $calculator-bg;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
+    border-right: 0.5rem solid rgb(228, 227, 227);
+    border-bottom: 0.5rem solid rgb(228, 227, 227);
+    box-shadow: 15px 12px 40px rgba(0, 0, 0, 0.646);
   }
 }
 
@@ -45,32 +45,30 @@ $divide-Button: #10b981;
   gap: 1.2rem;
 }
 
-form .display{
-    display: flex;
-    justify-content: center;
-    margin: 1.5rem 0;
+form .display {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
 }
 
-form .display input{
-    width: 100%;
-    font-family: 'digital',sans-serif;
-    font-size: 2.5rem;
-    text-align: right;
-    border: none;
-    color: $display-text;
-    outline: 0;
+form .display input {
+  width: 100%;
+  font-family: "digital", sans-serif;
+  font-size: 2.5rem;
+  text-align: right;
+  border: none;
+  color: $display-text;
+  outline: 0;
 }
 
-form .buttons input:last-child{
-    grid-column: 3 / span 2;
+form .buttons input:last-child {
+  grid-column: 3 / span 2;
 }
-
-
 
 .buttons input {
   background-color: $number-buttons;
   border: 0;
-  font-family: 'digital',sans-serif;
+  font-family: "digital", sans-serif;
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
@@ -78,4 +76,11 @@ form .buttons input:last-child{
   border-radius: 0.75rem;
   box-shadow: 0 2px 6px rgb(0, 0, 0, 0.1);
   cursor: pointer;
+  user-select: none;
+
+  &:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 }
+
