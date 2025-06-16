@@ -53,7 +53,6 @@ console.log(display.value);
 buttons.forEach((e) => {
   e.addEventListener("click", (event) => {
     let value = event.target.value;
-
     // all clear button
     if (value == "AC") {
       display.value = "";
