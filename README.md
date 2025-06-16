@@ -15,7 +15,7 @@ A stylish, lightweight, and functional **calculator app** built using **HTML**, 
 ✅ Fully Functional Calculator Logic  
 ✅ Smooth Button Press Animations  
 ✅ Clean Code Structure with SCSS  
-✅ Operator Validation Logic (no double operators like `++`, `--`)  
+✅ Operator Validation Logic
 ✅ Fully Responsive & Easy to Customize
 
 ---
@@ -51,7 +51,7 @@ cd 3d-calculator
 
 ## 🧠 Core Logic
 
-* Prevents multiple operators in a row (e.g., no `5 ++ 2`)
+* Prevents multiple operators in a row
 * Buttons scale slightly on press for tactile feedback
 * Input/output shown dynamically on the display
 
