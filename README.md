@@ -1,8 +1,3 @@
-Got it! Here's a more **engaging and modern `README.md`** with a friendlier tone, some emojis, and highlights on your project's UX + UI polish:
-
----
-
-````markdown
 # ⚡ 3D Calculator Web App
 
 A stylish, lightweight, and functional **calculator app** built using **HTML**, **SCSS**, and **JavaScript** — designed with a smooth 3D soft UI for a modern user experience.
@@ -67,19 +62,6 @@ cd 3d-calculator
 ├── script.js       # JavaScript logic
 └── README.md
 ```
-
----
-
-## 📌 Customize It
-
-You can change:
-
-* Colors (`$primary`, `$bg`, `$shadow`)
-* Font family
-* Button size/grid structure
-* Theme mode (light/dark)
-
-Let your creativity flow 💫
 
 ---
 
